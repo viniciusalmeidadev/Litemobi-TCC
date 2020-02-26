@@ -1,0 +1,35 @@
+
+<ion-content>
+  
+  <ion-header color="ion-color-primary">
+    <ion-toolbar>
+        <img src="/assets/imgs/Lite_Mobi.png" >
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+ 
+<div #map id="map"></div>
+
+
+
+<ion-fab vertical="center" horizontal="end" slot="fixed" routerLink="/home">
+  <ion-fab-button>
+    <ion-icon name="bus"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" routerLink="/funcao-soneca" (click)="pontoEtec()">
+    <ion-fab-button>
+      <ion-icon name="moon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+ 
+
+  
+</ion-content>

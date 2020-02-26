@@ -1,0 +1,204 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.divColunaAtiva{
+  
+    background-color: #1f87be;
+    border: solid 3px #236183;
+    color:#ffffff;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+ion-label{
+    color:#1f87be!important;
+
+}
+ion-content{
+
+    --ion-background-color:#ffffff
+    
+
+}
+
+.ion-labelLinhas{
+    color:#ffffff!important;
+}
+
+
+
+
+     
+.divLinhas{
+    width: 100%;
+    padding: 15px;
+    background: #1f87be;
+  
+
+}
+.iconRigth{
+    margin-left: 70%
+}
+
+
+
+
+.divColunaDesativada{
+  
+    background-color:  #ffffff;;
+    border: solid 1px #236183;
+    color:#1f87be;
+    padding: 10px;
+   text-align: center;
+}
+.linha-verticalInicial{
+ 
+    box-sizing: border-box;
+    cursor: pointer;
+    display: table;
+    height: 55px;
+    outline: 0;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+.linha-verticalInicial::before{
+    content: '';
+    border-left: 3px solid  #236183;
+    height: calc(100% - 28px);
+position: absolute; 
+    top: 28px;
+    left: 27px;
+}
+.linha-verticalInicial::after{
+    background-color: #fff;
+    border: 4px solid  #236183;
+
+    content: '';
+    height: 5px;
+    position: absolute; 
+    top: 28px;
+   
+    width: 5px;
+    left: 22px;
+}
+
+.linha-verticalDemais{
+    box-sizing: border-box;
+    cursor: pointer;
+    display: table;
+    height: 55px;
+    outline: 0;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+.linha-verticalDemais::before{
+    content: '';
+    border-left: 3px solid  #236183;
+    height: 100%;
+position: absolute; 
+    top: 0;
+    left: 27px;
+}
+.linha-verticalDemais::after{
+    background-color: #fff;
+    border: 4px solid  #236183;
+  
+    content: '';
+    height: 5px;
+    position: absolute; 
+    top:28px;
+   
+    width: 5px;
+    left: 22px;
+}
+
+.linha-verticalFinal{
+ 
+    box-sizing: border-box;
+    cursor: pointer;
+    display: table;
+    height: 55px;
+    outline: 0;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+.linha-verticalFinal::before{
+    content: '';
+    border-left: 3px solid  #236183;
+    height: calc(100% - 28px);
+position: absolute; 
+    top: 0px;
+    left: 27px;
+}
+.linha-verticalFinal::after{
+    background-color: #fff;
+    border: 4px solid  #236183;
+
+    content: '';
+    height: 5px;
+    position: absolute; 
+    top: 28px;
+   
+    width: 5px;
+    left: 22px;
+}
+
+.labelColor{
+    color:#ffffff;
+}
+
+.arrowColor{
+    color:#ffffff; 
+}
+.mediumPadding{
+    padding: 120px;
+
+}
+.paddingTop{
+    padding-bottom: 20px;
+}
+.paddingLeft{
+    padding-left: 20px;
+}
+.cauntionCenter{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 100px;
+}
+.inputDesenvolvimento{
+margin-left:45%;
+   font-weight:700;
+}

@@ -1,0 +1,613 @@
+
+
+<ion-content>
+  <div *ngIf = "linhas">
+    <div class="divLinhas labelColor">Linhas
+    <ion-icon name="arrow-round-back" class="iconRigth arrowColor" size="medium" routerLink="/map-track"></ion-icon>
+  </div>
+  <div class="" >
+     
+      <ion-list   >
+         
+          <ion-item   >
+              <ion-label routerLink="/linha302-a">Linha 302A </ion-label>
+
+          </ion-item>
+          <ion-item   >
+            <ion-label routerLink="/linha302-b">Linha 302B </ion-label>
+
+        </ion-item>
+        
+        <ion-item>
+          <ion-label routerLink="/linha310">Linha 310 </ion-label>
+      </ion-item>
+
+          <ion-item   >
+            <ion-label routerLink="/linha311">Linha 311 </ion-label>
+
+        </ion-item>
+         
+        <ion-item   >
+          <ion-label routerLink="/linha340">Linha 340 </ion-label>
+
+      </ion-item>
+            
+            <ion-item   >
+              <ion-label routerLink="/linha341">Linha 341 </ion-label>
+
+          </ion-item>
+
+      
+              <ion-item   >
+                <ion-label routerLink="/linha342">Linha 342 </ion-label>
+
+            </ion-item>
+      
+      </ion-list>
+  </div>
+  </div>
+  <div *ngIf="linha340">
+      <div class="divLinhas labelColor">
+         <ion-label class="ion-labelLinhas">Linha 340</ion-label>  
+          <ion-icon name="arrow-round-back" class="iconRigth arrowColor" size="medium" (click)="voltar()"></ion-icon>
+      </div>
+    <div>
+      
+      <ion-list *ngIf="ida_340" lines="none">
+          <ion-grid>
+              <ion-row>
+                <ion-col class="divColunaAtiva">
+                  <div (click) = "ida340()">Ida</div>
+                </ion-col>
+                <ion-col class="divColunaDesativada">
+                  <div (click) = "volta340()">Volta</div>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+
+
+          <div class="linha-verticalInicial">
+            <div class="paddingLeft">
+           <ion-item>
+               
+              <ion-label>Rua José Blummer</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+               
+               <ion-label>Rua Pérola</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+               
+              <ion-label>Rua Diamante</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Avenida da Emancipação</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Rua Otávio Rosolém</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Eleozina Batista da Silva</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua José Possidonio Silva</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Benedito Pedro Lacerda</ion-label>
+           </ion-item>
+         </div></div>
+         
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Orlando Signorelli</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+              <ion-item>
+              <ion-label>Rua Servidão C</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+              <ion-item>
+              <ion-label>Rua Antônio Fernandes Leite</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+              <ion-item>
+              <ion-label>Rua Benedito Leite</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Ercílio Antônio Meira</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Papa João Paulo II</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Antônio Fernandes Leite</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Waldiva F. Duarte</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalFinal">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>SP-101</ion-label>
+           </ion-item>
+         </div></div>
+
+      </ion-list>
+   
+      <ion-list *ngIf="volta_340" lines="none">
+         <div>
+          <ion-grid>
+              <ion-row>
+                <ion-col class="divColunaDesativada">
+                  <div (click) = "ida340()">Ida</div>
+                </ion-col>
+                <ion-col class="divColunaAtiva">
+                  <div (click) = "volta340()">Volta</div>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+         </div>
+    
+          
+<div class="linha-verticalInicial">
+   <div class="paddingLeft">
+          <ion-item lines="none">
+               
+              <ion-label>SP-101</ion-label>
+
+           </ion-item>
+         </div>
+         </div>
+         <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item >
+            
+              <ion-label>Rua Waldiva F. Duarte</ion-label>
+              
+           </ion-item>
+           </div>
+           </div>
+           <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Antônio Fernandes Leite</ion-label>
+           </ion-item>
+           </div></div>
+           <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Papa João Paulo II</ion-label>
+           </ion-item>
+         </div></div>
+         <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Ercílio Antônio Meira</ion-label>
+           </ion-item>
+         </div></div>
+         <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Benedito Leite</ion-label>
+           </ion-item>
+         </div></div>
+           <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Antônio Fernandes Leite</ion-label>
+           </ion-item>
+         </div></div>
+           <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Rua Servidão C</ion-label>
+           </ion-item>
+         </div></div>
+           <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+            <ion-item>
+                <ion-label>Rua Orlando Signorelli</ion-label>
+             </ion-item>
+            </div></div>
+
+            <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua Benedito Pedro Lacerda</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua José Possidonio Silva</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua Eleozina Batista da Silva</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua Otávio Rosolém</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Avenida da Emancipação</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua Diamante</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalDemais">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua Pérola</ion-label>
+             </ion-item>
+            </div></div>
+
+             <div class="linha-verticalFinal">
+               <div class="paddingLeft">
+             <ion-item>
+                <ion-label>Rua José Blummer</ion-label>
+             </ion-item>
+            </div></div>
+      </ion-list>
+     
+      </div>
+  </div>
+  <div *ngIf="linha332">
+      <div class="divLinhas labelColor">
+          <ion-label class="ion-labelLinhas">Linha 332 </ion-label>  
+          <ion-icon name="arrow-round-back" class="iconRigth arrowColor" size="medium" (click)="voltare()"></ion-icon>
+      </div>
+    <div>
+     <ion-list *ngIf="ida_332" lines="none">
+
+        <ion-grid>
+            <ion-row>
+              <ion-col class="divColunaAtiva">
+                <div (click) = "ida332()">Ida</div>
+              </ion-col>
+              <ion-col class="divColunaDesativada">
+                <div (click) = "volta332()">Volta</div>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        
+        <div class="linha-verticalInicial">
+         <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Antônio Francisco Lisboa </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Avenida Brasil</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Rua Anita Garibaldi</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Avenida Anita Garibaldi</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+            <ion-item>
+              <ion-label>Rua Monteiro Lobato </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Almirante Barroso</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Carlos Gomes  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Casemiro de Abreu </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua José Bonifácio  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Avenida Princesa Isabel </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Estácio de Sá </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Rodrigues Alves </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Cruz de Souza </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Almada Negreiros </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Bernardo Guimares  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalFinal">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Avenida Santana </ion-label>
+           </ion-item>
+            </div>
+         </div>
+           
+      </ion-list>
+      <ion-list *ngIf="volta_332" lines="none">
+
+          <ion-grid>
+              <ion-row>
+                <ion-col class="divColunaDesativada">
+                  <div (click) = "ida332()">Ida</div>
+                </ion-col>
+                <ion-col class="divColunaAtiva">
+                  <div (click) = "volta332()">Volta</div>
+                </ion-col>
+              </ion-row>
+          </ion-grid>
+       
+          <div class="linha-verticalInicial">
+            <div class="paddingLeft">
+          <ion-item>
+              <ion-label>Avenida Santana </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Bernardo Guimares  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Almada Negreiros </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Cruz de Souza </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Rodrigues Alves </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Estácio de Sá </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Avenida Princesa Isabel </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua José Bonifácio  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Casemiro de Abreu </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Carlos Gomes  </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Almirante Barroso</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Monteiro Lobato </ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Avenida Anita Garibaldi</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Anita Garibaldi</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalDemais">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Avenida Brasil</ion-label>
+           </ion-item>
+         </div></div>
+
+           <div class="linha-verticalFinal">
+            <div class="paddingLeft">
+           <ion-item>
+              <ion-label>Rua Antônio Francisco Lisboa </ion-label>
+           </ion-item>
+         </div>
+      </div>
+
+      </ion-list>
+
+      
+  </div>
+  
+
+
+  </div>
+  
+  <div *ngIf="linhasEmBreve">
+     
+      <div class="divLinhas labelColor">
+          <ion-label>Em Breve</ion-label>  
+          <ion-icon name="arrow-round-back" class="iconRigth arrowColor" size="medium" (click)="voltar()"></ion-icon>
+      </div>
+    
+      <div>
+      <img src="assets/icon/iconPneuFurado.png" class="cauntionCenter">
+   </div>
+   <div>
+         <ion-input class="inputDesenvolvimento " >OoPs</ion-input>
+      </div>
+
+
+  </div>
+</ion-content>

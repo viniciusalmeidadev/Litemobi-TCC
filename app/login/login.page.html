@@ -1,0 +1,55 @@
+
+
+<ion-content>
+  <div *ngIf="login">
+  <div class="centro mg-top-100">
+    <img src="assets/imgs/Lite_Mobi.png" class="logo">
+  </div>
+  <div class="padding-40">
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Email" [(ngModel)] = "loginForm.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Senha" type="password" [(ngModel)] = "loginForm.password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="padding-40">
+    <div class="botoes centro" (click) = "fazerLogin()">
+      Entrar
+    </div>
+    <div class="mg-top-20 centro" (click) = "exibirRegister()">
+      Criar Conta
+    </div>
+  </div>
+  </div>
+  <div *ngIf="register">
+    <div class="centro mg-top-100">
+      <img src="assets/imgs/Lite_Mobi.png" class="logo">
+    </div>
+    <div class="padding-40">
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="Nome" [(ngModel)] = "registerForm.name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Email" [(ngModel)] = "registerForm.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Senha" type="password" [(ngModel)] = "registerForm.password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+    <div class="padding-40">
+      <div class="botoes centro" (click) = "criarNovaConta()">
+        Criar Conta
+      </div>
+      <div class="mg-top-20 centro" (click) = "exibirLogin()">
+        Fazer Login
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

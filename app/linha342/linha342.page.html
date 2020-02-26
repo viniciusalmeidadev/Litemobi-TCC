@@ -1,0 +1,98 @@
+
+
+  
+<ion-content>
+ 
+  <div >
+      <div class="divLinhas labelColor">
+         <ion-label class="ion-labelLinhas">Linha 342</ion-label>  
+         <ion-icon name="arrow-round-back" class="iconRigth arrowColor" size="medium" routerLink="/home"></ion-icon>
+      </div>
+  </div>     
+   <div>
+      
+      
+  
+      <div *ngIf="Ida">
+          <ion-list lines="none">
+              <ion-grid>
+                  <ion-row> 
+                    <ion-col class="divColunaAtiva">
+                    <div (click) = "ida342()">Ida</div>
+                    </ion-col>
+                    <ion-col class="divColunaDesativada">
+                       <div (click) = "volta342()">Volta</div>
+                    </ion-col>
+                  </ion-row>
+              </ion-grid>
+        <div class="linha-verticalInicial" *ngFor = "let p of Linha342P" >
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{p.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+    
+         <div class="linha-verticalDemais"  *ngFor = "let i of Linha342I">
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{i.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+
+       <div class="linha-verticalFinal" *ngFor = "let u of Linha342U"  >
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{u.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+          </ion-list>
+     </div>
+
+      <div *ngIf="Volta">
+          <ion-list lines="none">
+              <ion-grid>
+                  <ion-row>
+                    <ion-col class="divColunaDesativada">
+                    <div (click) = "ida342()">Ida</div>
+                    </ion-col>
+                    <ion-col class="divColunaAtiva">
+                       <div (click) = "volta342()">Volta</div>
+                    </ion-col>
+                  </ion-row>
+              </ion-grid>
+        <div class="linha-verticalInicial" *ngFor = "let u of Linha342U" >
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{u.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+    
+         <div class="linha-verticalDemais"  *ngFor = "let v of Linha342V">
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{v.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+
+       <div class="linha-verticalFinal" *ngFor = "let p of Linha342P"  >
+          <div class="paddingLeft">
+          <ion-item>
+             
+             <ion-label>{{p.Rua}}</ion-label>
+         </ion-item>
+       </div></div>
+          </ion-list>
+     </div>
+
+      
+
+</div>
+
+</ion-content>
+
+

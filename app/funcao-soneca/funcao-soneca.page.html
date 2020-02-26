@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="">Função Soneca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+    
+        <ion-list   >
+                <ion-label class="paddingLeft paddingTop">Escolha abaixo um ponto de referência.
+                    </ion-label>
+            <ion-item   >
+                <ion-label routerLink="/map-track" (click)="pontoEtec()">
+                <h1 >Ponto Etec de Hortolândia</h1> 
+                <p>Rua: Capitão Lorival Mey, Hortolândia, SP.</p> 
+                </ion-label>
+    
+            </ion-item>
+            <ion-item   >
+                <ion-label  routerLink="/map-track" (click)= "pontoShop()">
+                <h1>Ponto TMH</h1> 
+                <p>Av: Olivío Franceschini, Hortolândia, SP.</p> 
+                </ion-label>
+    
+            </ion-item>
+            <ion-item   >
+                <ion-label (click)= "pontoPaulistao()">
+                <h1>Ponto Paulistão</h1> 
+                <p>Rua: Luís Camilo Camargo, Hortolândia, SP.</p> 
+                </ion-label>
+    
+            </ion-item>
+            <ion-item   >
+                <ion-label (Click)= "PontoShop()">
+                <h1>Ponto Shopping Hortolândia</h1> 
+                <p>Rua: José Camilo de Camargo, Hortolândia, SP.</p> 
+                </ion-label>
+    
+            </ion-item>
+            <ion-item   >
+                <ion-label (click)= "PontoHosp()">
+                <h1>Ponto Mário Covas</h1> 
+                <p>Rua: Osvaldo Ribeiro Carrilho, Hortolândia, SP.</p> 
+                </ion-label>
+    
+            </ion-item>
+        </ion-list>
+
+  
+
+</ion-content>
